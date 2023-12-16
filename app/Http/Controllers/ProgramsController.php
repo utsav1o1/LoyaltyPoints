@@ -20,7 +20,7 @@ class ProgramsController extends Controller
                     'id' => $program->id,
                     'name' => $program->name,
                     'description' =>substr($program->description, 0, 100),
-                    'imagePath' => asset('storage/app/images/'. $program->imagePath),
+                    'imagePath' => asset('storage/images/'. $program->imagePath),
                 ];
             }            
             ),
@@ -86,7 +86,7 @@ class ProgramsController extends Controller
                 'id' => $program->id,
                 'name' => $program->name,
                 'description' => $program->description,
-                'imagePath' => asset('storage/app/images/'. $program->imagePath),
+                'imagePath' => asset('storage/images/'. $program->imagePath),
             ],
         ]);
     
@@ -109,7 +109,7 @@ class ProgramsController extends Controller
                 'id' => $program->id,
                 'name' => $program->name,
                 'description' => $program->description,
-                'imagePath' => asset('storage/app/images/'. $program->imagePath),
+                'imagePath' => asset('storage/images/'. $program->imagePath),
             ],
         ]);  
     }

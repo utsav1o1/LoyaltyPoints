@@ -1,6 +1,4 @@
 <script setup>
-import AppLayout from "@/Layouts/AppLayout.vue";
-
 import { Link } from "@inertiajs/vue3";
 
 const props = defineProps({
@@ -9,14 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <AppLayout title="Dashboard">
-        <template #header>
-            <h2
-                class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"
-            >
-                Program Exchange
-            </h2>
-        </template>
+   
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -66,5 +57,4 @@ const props = defineProps({
                 </div>
             </div>
         </div>
-    </AppLayout>
 </template>
