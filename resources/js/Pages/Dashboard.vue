@@ -1,11 +1,11 @@
 <script setup>
-import AppLayout from '@/Layouts/AppLayout.vue';
+import MainLayout from '@/Layouts/MainLayout.vue';
 import { Link } from '@inertiajs/vue3';
 
 </script>
 
 <template>
-    <AppLayout title="Dashboard">
+    <MainLayout title="Dashboard">
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -14,5 +14,5 @@ import { Link } from '@inertiajs/vue3';
                 </div>
             </div>
         </div>
-    </AppLayout>
+    </MainLayout>
 </template>

@@ -1,5 +1,5 @@
 <script setup>
-import AppLayout from "@/Layouts/AppLayout.vue";
+import MainLayout from "@/Layouts/MainLayout.vue";
 import Welcome from "@/Components/Welcome.vue";
 import Profile from "@/Components/Profile.vue";
 import { Link } from "@inertiajs/vue3";
@@ -10,7 +10,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <AppLayout title="Dashboard">
+    <MainLayout title="Dashboard">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
                 Program Exchange
@@ -19,12 +19,12 @@ const props = defineProps({
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-end m-2 p-2">
+                <!-- <div class="flex justify-end m-2 p-2">
                     <Link href="/prgexchange/create"
                         class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Create Program
                     </Link>
-                </div>
-                <div class="bg-white dark:bg-gray-800 no-scrollbar overflow-scroll h-96 shadow-xl sm:rounded-lg">
+                </div> -->
+                <div class="bg-white dark:bg-gray-800 no-scrollbar overflow-scroll  shadow-xl sm:rounded-lg" style="height: 550px;">
                     <div v-for="program in programs" :key="program.id" class="p-4">
                         <div class="flex overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
                             <div class="w-1/3 bg-cover">
@@ -47,7 +47,7 @@ const props = defineProps({
                 </div>
             </div>
         </div>
-    </AppLayout>
+    </MainLayout>
 </template>
 
 <style>

@@ -320,9 +320,11 @@ const logout = () => {
                             </a>
 
                             <a href="#"
-                                class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200  mx-1.5 sm:mx-6"> <NavLink :href="route('scan')" :active="route().current('scan')">
+                                class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200  mx-1.5 sm:mx-6">
+                                <NavLink :href="route('scan')" :active="route().current('scan')">
                                     Scan Me
-                                </NavLink></a>
+                                </NavLink>
+                            </a>
 
                             <a href="#"
                                 class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200  mx-1.5 sm:mx-6">Profile</a>
@@ -333,5 +335,6 @@ const logout = () => {
                     </nav>
                 </div>
             </div>
+        </div>
     </div>
-</div></template>
+</template>
